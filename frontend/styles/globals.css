@@ -1,0 +1,159 @@
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Public Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+/* ------------------Sidemenu yarn start--------------------- */
+
+.css-fijinl {
+  background: #44165E !important;
+}
+.css-gpydh5{
+  background: #44165E !important;
+}
+
+.css-1r5trry .MuiTypography-root {
+  color: rgb(255, 255, 255) !important;
+}
+
+.css-1r5trry.active,
+.css-1r5trry.active:hover {
+  box-shadow: none !important;
+  background: #62337D !important;
+}
+
+.css-uo704d :not(.menu-item-meta)>svg {
+  color: rgb(255, 255, 255) !important;
+}
+
+.css-uo704d.Mui-selected {
+  background-color: rgb(116, 85, 134) !important;
+}
+
+
+.css-1r5trry:hover {
+  background-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+.css-1r5trry svg {
+  color: rgb(255, 255, 255) !important;
+}
+
+.css-uo704d .MuiTypography-root {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* ------------------Sidemenu yarn dev--------------------- */
+
+
+.css-1r5trry .MuiTypography-root,
+.css-1r5trry svg {
+  color: rgb(255, 255, 255);
+}
+
+.sidemenu .css-13uk3hm-MuiPaper-root-MuiDrawer-paper {
+  background: #44165E !important;
+}
+
+.css-1k2dlpe-MuiPaper-root-MuiDrawer-paper {
+  background: #44165E !important;
+}
+
+.css-1coxebg-MuiButtonBase-root-MuiListItemButton-root .MuiTypography-root,
+.css-1coxebg-MuiButtonBase-root-MuiListItemButton-root svg {
+  color: #fff !important;
+}
+
+.css-1coxebg-MuiButtonBase-root-MuiListItemButton-root.active,
+.css-1coxebg-MuiButtonBase-root-MuiListItemButton-root.active:hover {
+  background: #62337D !important;
+  box-shadow: none !important;
+}
+
+.css-rlam5d-MuiPaper-root-MuiDrawer-paper {
+  background-color: #44165E !important;
+}
+
+/* sub menu */
+.css-56i2m2-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+  background-color: rgba(254, 254, 255, 0.04) !important;
+}
+
+
+
+.css-1coxebg-MuiButtonBase-root-MuiListItemButton-root:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+
+}
+
+.css-56i2m2-MuiButtonBase-root-MuiListItemButton-root .MuiTypography-root,
+.css-56i2m2-MuiButtonBase-root-MuiListItemButton-root :not(.menu-item-meta)>svg {
+  color: rgb(255, 255, 255) !important;
+}
+
+.sidemenu .css-15cb8zb svg {
+  color: rgb(255, 255, 255);
+}
+
+.css-56i2m2-MuiButtonBase-root-MuiListItemButton-root.Mui-selected .MuiTypography-root,
+.css-56i2m2-MuiButtonBase-root-MuiListItemButton-root.Mui-selected :not(.menu-item-meta)>svg {
+  color: rgb(255, 255, 255) !important;
+}
+
+.uploadbox {
+  min-height: 150px !important;
+}
+
+.box-border {
+  border-radius: 10px;
+  border: 1px dashed #000;
+  background: #ECEFF7;
+  height: 36vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box-section-title {
+  align-self: center;
+}
+
+.check-box {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #FFF;
+  width: 100%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.box-card-border {
+  border-radius: 10px;
+  border: 1px dashed #000;
+  margin-bottom: 20px;
+}
