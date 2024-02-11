@@ -62,19 +62,32 @@ const AuthProvider = ({ children }) => {
   }, [])
 
   const handleLogin = (params, errorCallback) => {
+    console.log('at handle login with params', params)
+    const params_test = {username: 'admin',password:'admin'}
     axios
-      .post(authConfig.loginEndpoint, params)
+      .post(authConfig.loginEndpoint, params_test)
       .then(async response => {
         params.rememberMe
           ? window.localStorage.setItem(authConfig.storageTokenKeyName, response.data.accessToken)
           : null
         const returnUrl = router.query.returnUrl
-        setUser({ ...response.data.userData })
+        console.log({...response.data})
+        const userData =   {
+          id: 1,
+          role: 'admin',
+          password: 'admin',
+          fullName: 'John Doe',
+          username: 'johndoe',
+          email: 'admin@gmail.com'
+        }
+        setUser({ ...userData })
         params.rememberMe ? window.localStorage.setItem('userData', JSON.stringify(response.data.userData)) : null
         const redirectURL = returnUrl && returnUrl !== '/' ? returnUrl : '/'
+        console.log(redirectURL, 'is the redirect URL **', returnUrl, 'is the returnURL')
         router.replace(redirectURL)
       })
       .catch(err => {
+        console.log(err)
         if (errorCallback) errorCallback(err)
       })
   }

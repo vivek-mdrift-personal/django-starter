@@ -43,6 +43,7 @@ import FooterIllustrationsV2 from 'src/views/pages/auth/FooterIllustrationsV2'
 import CardSnippet from 'src/@core/components/card-snippet'
 import SwiperAutoSwitch from 'src/dashboard/swiper/SwiperAutoSwitch'
 import { Grid } from '@mui/material'
+import { useRouter } from 'next/router'
 
 const LoginIllustration = styled('img')(({ theme }) => ({
   width: '100%',
@@ -107,7 +108,7 @@ const LoginPage = () => {
   const bgColors = useBgColor()
   const { settings } = useSettings()
   const hidden = useMediaQuery(theme.breakpoints.down('md'))
-
+  const router = useRouter()
   // ** Vars
   const { skin } = settings
 
@@ -124,6 +125,8 @@ const LoginPage = () => {
 
   const onSubmit = data => {
     const { email, password } = data
+    // router.push('/home')
+    console.log(data)
     auth.login({ email, password, rememberMe }, () => {
       setError('email', {
         type: 'manual',

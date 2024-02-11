@@ -38,10 +38,12 @@ mock.onPost('/jwt/login').reply(request => {
   let error = {
     email: ['Something went wrong']
   }
+  console.log("reaced here at jwt mock api")
   const user = users.find(u => u.email === email && u.password === password)
+  console.log(user)
   if (user) {
+    console.log(jwtConfig, "is the jwt Config")
     const accessToken = jwt.sign({ id: user.id }, jwtConfig.secret, { expiresIn: jwtConfig.expirationTime })
-
     const response = {
       accessToken,
       userData: { ...user, password: undefined }
@@ -49,10 +51,11 @@ mock.onPost('/jwt/login').reply(request => {
 
     return [200, response]
   } else {
+    
     error = {
       email: ['email or Password is Invalid']
     }
-
+    console.log(error)
     return [400, { error }]
   }
 })
