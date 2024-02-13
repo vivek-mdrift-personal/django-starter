@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
 
   const handleLogin = (params, errorCallback) => {
     console.log('at handle login with params', params)
-    const params_test = {username: 'admin',password:'admin'}
+    const params_test = {username: 'vivek2',password:'admin'}
     axios
       .post(authConfig.loginEndpoint, params_test)
       .then(async response => {
